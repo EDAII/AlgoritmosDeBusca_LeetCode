@@ -12,6 +12,9 @@ Trabalho 1 - A dupla realizou a resolução de questões da plataforma LeetCode 
 | -- | -- |
 | [878. Nth Magical Number](https://leetcode.com/problems/nth-magical-number/description/?envType=problem-list-v2&envId=binary-search)| Difícil |
 | [187. Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/description/)| Médio |
+| [12. Integer to Roman](https://leetcode.com/problems/integer-to-roman/description/)| Médio|
+| [410. Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/)| Difícil |
+
 
 
 ## Guia de instalação
@@ -29,6 +32,19 @@ Esse desafio consiste em encontrar o **N-ésimo número mágico**, onde um núme
 Este desafio envolve identificar todas as **sequências de DNA de 10 letras** que aparecem mais de uma vez em uma string de DNA. O problema requer implementação eficiente de hash table para processar strings que podem ter até 10^5 caracteres, demonstrando aplicação prática de estruturas de dados em bioinformática.
 
 ![Print da Resolução 187 Repeated DNA Sequences](./assets/187.png)  
+
+### [12. Integer to Roman](https://leetcode.com/problems/integer-to-roman/description/)
+
+O desafio consiste em decompor o número usando uma tabela de valores já com os casos subtrativos (IV, IX, XL, XC, CD, CM) de modo que, a cada passo, considera-se o maior valor ≤ num, concatena o símbolo e subtrai, repetindo até num == 0.
+
+![Print da Resolução 12 - Integer to Roman](./assets/12.png) 
+
+
+### [410. Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/)
+
+O desafio consiste em dividir um array em k partes, minimizando o maior somatório. É um exemplo de binary search on answer em que não procuramos um índice, e sim o menor valor de resposta possível.
+
+![Print da Resolução 410 - Split Array Largest Sum](./assets/410.png) 
 
 ## Conclusões
 ### Para o **Desafio 878 - Nth Magical Number**:
@@ -62,6 +78,41 @@ A implementação manual de uma Hash Table demonstrou ser a abordagem ideal para
 - Necessidade de percorrer toda a string, sem possibilidade de terminação antecipada
 
 Este problema exemplifica a aplicação direta de Hash Tables em problemas reais de bioinformática, onde a identificação de padrões repetidos em sequências de DNA é crucial para estudos genéticos e identificação de marcadores genômicos.
+
+--- 
+### Para o **Desafio 12 - Integer to Roman**:
+O algoritmo implementado para conversão de inteiros para algarismos romanos demonstrou ser eficiente e elegante, com complexidade temporal O(1) devido ao conjunto limitado de valores possíveis (1-3999).
+
+**Pontos Fortes:**
+- Tabela pré-definida com casos subtrativos incluídos (IV, IX, XL, XC, CD, CM) evita lógica condicional complexa
+- Algoritmo guloso sempre seleciona o maior valor possível, garantindo a forma canônica
+- Código conciso e altamente legível com apenas dois loops aninhados
+- Solução determinística que sempre produz o resultado correto (evita variações como "IIII" em vez de "IV")
+
+**Limitações:**
+- Restrito ao intervalo de 1 a 3999 conforme convenção romana padrão
+- Não extensível facilmente para números maiores sem modificação da estrutura
+- Dependente de tabela hardcoded, menos flexível para variações históricas dos numerais romanos
+
+Esta solução exemplifica como uma abordagem tabular pode simplificar problemas de conversão com regras complexas, tornando o código mais mantível e testável.
+
+---
+
+### Para o **Desafio 410 - Split Array Largest Sum**:
+A solução utilizando busca binária sobre o espaço de respostas demonstrou ser a abordagem ótima para este problema de otimização combinatória, transformando um problema exponencial em uma solução O(n * log(sum - max)).
+
+**Pontos Fortes:**
+- Binary search on answer reduz drasticamente o espaço de busca
+- Função de validação greedy em O(n) verifica viabilidade eficientemente
+- Complexidade total O(n * log S) onde S é a soma do array, muito melhor que programação dinâmica O(n²k)
+- Solução escalável para arrays grandes e valores elevados de k
+
+**Limitações:**
+- Não fornece a divisão ótima explicitamente, apenas o valor mínimo do maior somatório
+- Requer compreensão profunda do paradigma "binary search on answer"
+- Pode haver múltiplas divisões válidas com o mesmo resultado ótimo
+
+Este problema demonstra magistralmente como a busca binária pode ser aplicada em problemas de otimização onde buscamos o valor ótimo em um espaço contínuo ou discreto ordenado, uma técnica fundamental em programação competitiva e otimização algorítmica.
 
 ## Referências
 - [Binary Search - GeeksforGeeks](https://www.geeksforgeeks.org/binary-search/)

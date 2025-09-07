@@ -1,36 +1,45 @@
-# Repositório Template
-Repositório de Template para os projetos da disciplina 
-```
-Nome do Repositório (Apague este tópico)
-  O nome do repositório deve seguir o padrão <TemaProjeto>_<Nome Projeto>.
-  O nome do projeto deve representar o que foi implementado no mesmo (Ex:
-  Game xyz, Implementações Otimizadas de Algoritmos, Aplicativo xpto)
-
-Os temas de projeto são:  
- - Busca - Algoritmos de busca  
- - Ord_quad - Algoritmos de ordenação O(n²)  
- - Ord_nlogn - Algoritmos de ordenação O(n*log(n))  
- - Arv - Algoritmos de manipulação de Árvores  
- - Grafo - Algoritmos de manipulação de Grafos  
- 
- Ex: Busca_ConcorrenteDaGoogle
-```
+# Algoritmos de Busca - Trabalho 1 
 ## Alunos  
 | Matrícula | Nome |  
 |-----------------------|---------------------|  
-| xx/xxxxxxx | xxxx xxxx xxxxx |  
-| xx/xxxxxxx | xxxx xxxx xxxxx |  
+| 23/1012129 | Gabriel Lopes de Amorim |  
+| 21/1031593 | Andre Lopes de Sousa |  
 ## Descrição do projeto
-Aqui você deve dizer o objetivo deste projeto e o que realmente foi feito neste repositório.
+Trabalho 1 - A dupla realizou a resolução de questões da plataforma LeetCode pelos integrantes do grupo com o objetivo de demonstrar e aplicar o conhecimento adquirido durante as aulas sobre (Algoritmos de Busca) da disciplina de Estrutura de Dados 2.
+## Questões
+
+|Questão | Dificuldade |
+| -- | -- |
+| [878. Nth Magical Number](https://leetcode.com/problems/nth-magical-number/description/?envType=problem-list-v2&envId=binary-search)| Difícil |
+
+
 ## Guia de instalação
-Aqui devem estar descritas as dependências do projeto (versões de linguagens e ferramentas) e as instruções necessárias para executar o projeto. 
-### Dependências do projeto
-### Como executar o projeto
+Os Scripts Python utilizados para a resolução dos desafios estão na pasta Resolucoes.
+
 ## Capturas de tela
-Neste tópico você deve adicionar imagens do funcionamento do projeto.  
- - As imagens devem ser salvas no repositório.
- - Imagens salvas em domínios eternos tendem a ficar indisponíveis e devem ser evitadas.   
+### [878. Nth Magical Number](https://leetcode.com/problems/nth-magical-number/description/?envType=problem-list-v2&envId=binary-search) 
+
+Esse desafio consiste em encontrar o **N-ésimo número mágico**, onde um número é considerado "mágico" se for divisível por `a` ou `b`. O problema apresenta uma complexidade significativa devido ao tamanho potencial de N (até 10^9) e a necessidade de retornar o resultado módulo 10^9 + 7.
+
+![Print da Resolução 878 Nth Magical Number](./assets/878.png)  
 ## Conclusões
-Aqui você diz se o algoritmo utilizado foi útil, se tem limitações, etc.
+Para o **Desafio 878**:
+O algoritmo de busca binária se mostrou extremamente eficiente para este problema, transformando uma solução que seria O(n) em força bruta (impraticável para n até 10^9) em uma solução O(log n). 
+
+**Pontos Fortes:**
+- Complexidade logarítmica permite resolver casos com N muito grande (até 10^9)
+- Uso inteligente do Princípio da Inclusão-Exclusão para contar números eficientemente
+- Solução elegante que evita gerar todos os números mágicos
+
+**Limitações:**
+- Requer compreensão do MMC e do Princípio da Inclusão-Exclusão
+- A implementação precisa lidar com overflow potencial (por isso o módulo 10^9 + 7)
+- Não é intuitiva de primeira vista, exigindo análise matemática do problema
+
+Esta questão demonstra perfeitamente como a busca binária pode ser aplicada em problemas não-óbvios, onde não estamos buscando em um array, mas sim em um espaço matemático abstrato.
+
+--- 
+
+
 ## Referências
-Caso tenha utilizado algum agoritmo como base, citar o mesmo devidamente para  evitar quaisquer denuncias de plágio.
+- [Binary Search - GeeksforGeeks](https://www.geeksforgeeks.org/binary-search/)

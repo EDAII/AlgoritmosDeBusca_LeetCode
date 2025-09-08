@@ -9,6 +9,7 @@ class HashTableDNA:
             hash_val = hash_val * 31 + ord(char)
         return hash_val % self.tamanho
     
+
     def adicionar(self, sequencia):
         indice = self._hash(sequencia)
         for seq, count in self.tabela[indice]:

@@ -77,7 +77,7 @@ A implementação manual de uma Hash Table demonstrou ser a abordagem ideal para
 - Função hash polinomial pode ter distribuição desigual para alguns padrões específicos
 - Necessidade de percorrer toda a string, sem possibilidade de terminação antecipada
 
-Este problema exemplifica a aplicação direta de Hash Tables em problemas reais de bioinformática, onde a identificação de padrões repetidos em sequências de DNA é crucial para estudos genéticos e identificação de marcadores genômicos.
+Este problema exemplifica a aplicação direta de Hash Tables em problemas reais de bioinformatica.
 
 --- 
 ### Para o **Desafio 12 - Integer to Roman**:
@@ -94,8 +94,6 @@ O algoritmo implementado para conversão de inteiros para algarismos romanos dem
 - Não extensível facilmente para números maiores sem modificação da estrutura
 - Dependente de tabela hardcoded, menos flexível para variações históricas dos numerais romanos
 
-Esta solução exemplifica como uma abordagem tabular pode simplificar problemas de conversão com regras complexas, tornando o código mais mantível e testável.
-
 ---
 
 ### Para o **Desafio 410 - Split Array Largest Sum**:
@@ -109,10 +107,6 @@ A solução utilizando busca binária sobre o espaço de respostas demonstrou se
 
 **Limitações:**
 - Não fornece a divisão ótima explicitamente, apenas o valor mínimo do maior somatório
-- Requer compreensão profunda do paradigma "binary search on answer"
-- Pode haver múltiplas divisões válidas com o mesmo resultado ótimo
-
-Este problema demonstra magistralmente como a busca binária pode ser aplicada em problemas de otimização onde buscamos o valor ótimo em um espaço contínuo ou discreto ordenado, uma técnica fundamental em programação competitiva e otimização algorítmica.
 
 ## Apresentação
 [Link para a apresentação](https://youtu.be/pAIV34M_N3o)

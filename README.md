@@ -5,7 +5,7 @@
 | 23/1012129 | Gabriel Lopes de Amorim |  
 | 21/1031593 | Andre Lopes de Sousa |  
 ## Descrição do projeto
-Trabalho 1 - A dupla realizou a resolução de questões da plataforma LeetCode pelos integrantes do grupo com o objetivo de demonstrar e aplicar o conhecimento adquirido durante as aulas sobre (Algoritmos de Busca) da disciplina de Estrutura de Dados 2.
+Trabalho 1 - A dupla realizou a resolução de questões da plataforma [LeetCode](https://leetcode.com/problemset/) pelos integrantes do grupo com o objetivo de demonstrar e aplicar o conhecimento adquirido durante as aulas sobre (Algoritmos de Busca) da disciplina de Estrutura de Dados 2.
 ## Questões
 
 |Questão | Dificuldade |
@@ -113,6 +113,9 @@ A solução utilizando busca binária sobre o espaço de respostas demonstrou se
 - Pode haver múltiplas divisões válidas com o mesmo resultado ótimo
 
 Este problema demonstra magistralmente como a busca binária pode ser aplicada em problemas de otimização onde buscamos o valor ótimo em um espaço contínuo ou discreto ordenado, uma técnica fundamental em programação competitiva e otimização algorítmica.
+
+## Apresentação
+[Link para a apresentação](https://youtu.be/pAIV34M_N3o)
 
 ## Referências
 - [Binary Search - GeeksforGeeks](https://www.geeksforgeeks.org/binary-search/)
